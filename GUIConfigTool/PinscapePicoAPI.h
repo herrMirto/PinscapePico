@@ -14,6 +14,6 @@
 #endif
 
 // bring the main interfaces into our global namespace
-using VendorInterface = PinscapePico::VendorInterface;
+using VendorInterfaceDesc = PinscapePico::VendorInterfaceDesc;
 using FeedbackControllerInterface = PinscapePico::FeedbackControllerInterface;
 using RP2BootDevice = PinscapePico::RP2BootDevice;
