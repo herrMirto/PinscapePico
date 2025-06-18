@@ -15,5 +15,6 @@
 
 // bring the main interfaces into our global namespace
 using VendorInterfaceDesc = PinscapePico::VendorInterfaceDesc;
+using VendorInterface = PinscapePico::VendorInterface;
 using FeedbackControllerInterface = PinscapePico::FeedbackControllerInterface;
 using RP2BootDevice = PinscapePico::RP2BootDevice;
