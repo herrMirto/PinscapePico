@@ -547,6 +547,21 @@ static-link library (.lib) that you can include in any C++ project.
 Refer to [WinAPI/README.md](WinAPI/README.md), and the source
 files in the WinAPI/ folder.
 
+### Cross-platform host API
+
+An experimental cross-platform host API is available in the
+`HostAPI` folder.  This version now includes a basic implementation
+using **libusb** and **hidapi** to enumerate and open devices on
+Linux and macOS.  The API is still incomplete but provides working
+examples for accessing the vendor and feedback controller interfaces
+without Windows.
+
+### Experimental Qt GUI
+
+The `GUIConfigToolQt` directory contains a Qt 6 based version of the
+Config Tool.  It provides a simple main window that lists connected
+Pinscape devices and works on Linux and macOS.
+
 ### USB protocols
 
 The Windows C++ API is built atop a set of documented, structured, and

@@ -162,3 +162,20 @@ download it from the official Microsoft site at https://visualstudio.microsoft.c
 * In the file selector, navigate  to your PinscapePico folder, and select **PinscapePico.sln**
 
 * Select **Build** > **Build Solution** on the main menu
+
+## Building the Qt GUI on Linux and macOS
+
+An experimental Qt-based version of the Config Tool is provided in the
+`GUIConfigToolQt` folder.  A CMake build is supplied.  Ensure that Qt 6
+and CMake are installed, then build and run:
+
+```
+mkdir build && cd build
+cmake ../GUIConfigToolQt
+cmake --build .
+./PinscapePicoGUI
+```
+
+The Qt version currently implements a simple main window that lists
+connected Pinscape devices.  It serves as a foundation for further
+cross-platform development.

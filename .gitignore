@@ -1,4 +1,5 @@
 packages/**
+build/**
 **/.vs/
 **/win32/
 **/x64/

@@ -5,9 +5,13 @@
 // namespace.
 
 #pragma once
+#ifdef _WIN32
 #include "../WinAPI/PinscapeVendorInterface.h"
 #include "../WinAPI/FeedbackControllerInterface.h"
 #include "../WinAPI/RP2BootLoaderInterface.h"
+#else
+#include "../HostAPI/PinscapePicoAPI.h"
+#endif
 
 // bring the main interfaces into our global namespace
 using VendorInterface = PinscapePico::VendorInterface;
