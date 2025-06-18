@@ -7,7 +7,9 @@
 
 struct libusb_context;
 struct libusb_device_handle;
-struct hid_device;
+//struct hid_device;
+struct hid_device_;
+typedef struct hid_device_ hid_device;
 
 namespace PinscapePico {
 
